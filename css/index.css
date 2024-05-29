@@ -1,0 +1,43 @@
+body {
+    position: relative;
+}
+/*bouton jouer*/
+.grosse_video {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+}
+.video_de_présentation_div {
+    position: relative;
+    background-color: transparent;
+}
+.video_de_présentation_div_video {
+    width: 100%;
+    margin-top: -10%;
+    border-radius: 0% 0% 5% 5%;
+}
+.bouton_jouer_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+}
+.bouton_jouer_div a {
+    display: block;                                                          /*transformation en block*/
+    text-decoration: none;                                                   /*supresion du soulignement*/
+    text-align: center;                                                      /*centrer le text*/
+    color: rgb(0, 0, 0);                                                   /*couleur du text*/
+    border: 1px solid rgb(0, 0, 0);                                        /*bordure et couleur de la bordur*/
+    background-color: rgb(0, 255, 0);                                      /*couleur de l'arierre plan*/
+    border-radius: 50px;                                                      /*arondie*/
+    font-size: 50px;
+}
+.bouton_jouer_div a:hover {
+    color: rgb(0, 0, 0);                                                   /*couleur du text*/
+    border: 1px solid rgb(0, 0, 0);                                        /*bordure et couleur de la bordur*/
+    background-color: rgb(0, 158, 0);                                      /*couleur de l'arierre plan*/
+}

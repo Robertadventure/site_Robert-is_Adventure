@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(19, 19, 19);
+    color: rgb(255, 255, 255);
+}
+p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+h1 {
+    text-decoration: underline rgb(255, 255, 255);
+    font-weight: bolder;
+}
+h2 {
+    text-decoration: underline rgb(255, 255, 255);
+    font-weight: bolder;
+}
+label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+/*menu*/
+.menu {
+    display: flex;                                                          /*transformation en flexbox*/
+    padding: 0;                                                             /*supression des marge intern*/
+    background-color: transparent;                                          /*couleur d'arierre plan*/
+    justify-content: flex-end;                                              /*centrage horisontale*/
+}
+.menu li {
+    list-style-type: none;                                                   /*supression des point*/
+}
+.menu li a:hover {                                                              /*quand survoler*/
+    color: rgb(255, 255, 255);                                             /*couleur du text*/
+    border: 1px solid rgb(255, 255, 255);                                  /*bordure et couleur de la bordur*/
+    background-color: rgb(158, 102, 29);                                        /*couleur de l'arierre plan*/
+}
+.menu li a {
+    display: block;                                                          /*transformation en block*/
+    text-decoration: none;                                                   /*supresion du soulignement*/
+    min-width: 120px;                                                        /*largeur minimaume des lien*/
+    margin: 0.5rem;                                                          /*marge extern*/
+    text-align: center;                                                      /*centrer le text*/
+    color: rgb(255, 255, 255);                                             /*couleur du text*/
+    border: 1px solid rgb(255, 255, 255);                                  /*bordure et couleur de la bordur*/
+    background-color: rgb(0, 0, 0);                                        /*couleur de l'arierre plan*/
+    border-radius: 4px;                                                      /*arondie*/
+}
+.grandmenu {
+    display: flex;                                                          /*transformation en flexbox*/
+    padding: 0;                                                             /*supression des marge intern*/
+    background-color: rgb(58, 58, 58);                                     /*couleur d'arierre plan*/
+    justify-content: space-between;                                         /*centrage horisontale*/
+    position: sticky;                                                       /*coller le menue*/
+    top: 0;                                                                 /*coller le menu en haut*/
+    z-index: 100;
+    width: 100%;
+}
+.compte {
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 3px;
+}
+/*fin du menue*/
+/*bloc de text*/
+.bloc_de_text {
+    position: relative;
+    background-color: rgb(58, 58, 58);                                        /*couleur de l'arierre plan*/
+    border-radius: 8px;                                                         /*arondie*/
+    border: 1px solid rgb(255, 255, 255);                                     /*bordure*/
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 50px;
+    padding: 0;
+    display: flex;
+}
+.text {
+    height: 100%;
+    width: 75%;
+    padding: 0;
+}
+
+.image {
+    border-radius: 4px;
+    height: 100%;
+    width: 25%;
+    padding: 0;
+    margin: 8px;
+}
+.image img{
+    border-radius: 8px;
+    position: relative;
+    left: 0%;
+    height: auto;
+    width: 100%;
+}
+
+/*dialog*/
+
+#dialog_demande_de_conexion {
+    width: 25%;
+    background-color: rgb(58, 58, 58);                                        /*couleur de l'arierre plan*/
+    border: 1px solid rgb(255, 255, 255);                                     /*bordure*/
+    border-radius: 8px;
+
+}
+.message_champ_text_inpute {
+    display: block;
+    margin: 4px;
+}
+.message_champ_text_inpute label{
+    margin: 10px;
+}
+.message_champ_text_inpute input{
+    margin: 10px;
+}
+
+#label_conexion {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    margin: 2px;
+}
+#fermer {
+    position: absolute;
+    transform: translate(0%, 100%);
+    top: 0%;
+    right: 4%;
+    
+}
+.bouton_du_dialog{
+    text-decoration: none;                                                   /*supresion du soulignement*/
+    text-align: center;                                                      /*centrer le text*/
+    color: rgb(255, 252, 252);                                                   /*couleur du text*/
+    border: 1px solid rgb(255, 255, 255);                                        /*bordure et couleur de la bordur*/
+    background-color: rgb(0, 0, 0);                                      /*couleur de l'arierre plan*/
+    border-radius: 8px;                                                      /*arondie*/
+    font-size: 20px;
+    padding: 2px;
+    margin: 10px;
+}
+#bouton_dialog {
+    display: block;
+    text-align: center;
+}
+#message_créer_un_compte_dialog {
+    text-align: center;
+}
