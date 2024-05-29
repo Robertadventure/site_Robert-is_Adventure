@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Robert'is Adventure forum</title>
+        <link rel="stylesheet" href="css/globale.css" />
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <ul class="grandmenu">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="forum.html">forum</a></li>
+                <li><a href="présentation.html">présentation</a></li>
+                <li><a href="jeux.html">jeux</a></li>
+                <button id="bouton_demande_de_conexion"><img src="images/compte.png" alt="" class="compte"></a></button>
+            </ul>
+        </ul>
+
+        <dialog id="dialog_demande_de_conexion">
+            <form method="dialog">
+                <h3 id="label_conexion">Conexion:</h3>
+                <div class="message_champ_text_inpute">
+                    <label for="champ_email">email:</label>
+                    <input type="email" name="email" id="champ_email">
+                </div>
+                <div class="message_champ_text_inpute">
+                    <label for="champ_code">code:</label>
+                    <input type="password" name="code" id="champ_code">
+                </div>
+                <div id="message_créer_un_compte_dialog"><label for="créer_un_compte">Vous n'en poséder pas? Créer en un.</label></div>
+                <div id="bouton_dialog">
+                    <a href="créer_un_compte.html" class="bouton_du_dialog">Créer un compte</a>
+                    <button id="conexion" class="bouton_du_dialog">Conexion</button>
+                </div>
+                <button type="submit" id="fermer">Fermer</button>
+            </form>
+        </dialog>
+        <script src="json/menu_demande_conexion.js"></script>
+        <h1>Le forum est en cour de devlopement</h1>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Robert'is Adventure présentation</title>
+        <link rel="stylesheet" href="css/globale.css" />
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <ul class="grandmenu">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="forum.html">forum</a></li>
+                <li><a href="présentation.html">présentation</a></li>
+                <li><a href="jeux.html">jeu</a></li>
+                <button id="bouton_demande_de_conexion"><img src="images/compte.png" alt="" class="compte"></a></button>
+            </ul>
+        </ul>
+
+        <dialog id="dialog_demande_de_conexion">
+            <form method="dialog">
+                <h3 id="label_conexion">Connexion:</h3>
+                <div class="message_champ_text_inpute">
+                    <label for="champ_email">addresse mail:</label>
+                    <input type="email" name="email" id="champ_email">
+                </div>
+                <div class="message_champ_text_inpute">
+                    <label for="champ_code">mot de passe:</label>
+                    <input type="password" name="code" id="champ_code">
+                </div>
+                <div id="message_créer_un_compte_dialog"><label for="créer_un_compte">Vous n'en posséder pas ? Créés-en un.</label></div>
+                <div id="bouton_dialog">
+                    <a href="créer_un_compte.html" class="bouton_du_dialog">Créer un compte</a>
+                    <button id="conexion" class="bouton_du_dialog">Connexion</button>
+                </div>
+                <button type="submit" id="fermer">Fermer</button>
+            </form>
+        </dialog>
+        <script src="json/menu_demande_conexion.js"></script>
+
+
+        <div class="bloc_de_text">
+            <div class="image"><img src="images/ciel.jpg" alt="image d'ilustration du text"></div>
+            <div class="text">
+            <h1>Jeu</h1>
+            <p>Robert's Adventures est un jeu de plateforme qui voit le jour en 2024. Il est composer de 5 monde de 4 niveaux. Dans lesquelles votre personnage évolue pour ramasser des carottes</p>
+            </div>
+        </div>
+
+        <div class="bloc_de_text">
+            <div class="image"><img src="images/ciel.jpg" alt="image d'ilustration du text"></div>
+            <div class="text">
+            <h1>Mode créatif</h1>
+            <p>Le mode créatif vous permet de créer vos propres niveaux personnalisés et de les partager a vos amis voire même les partager au monde entier. Si votre niveaux est repérer par notre équipe il sera peut-être officielement ajouter au jeu.</p>
+            </div>
+        </div>
+        
+        <div class="bloc_de_text">
+            <div class="image"><img src="images/ciel.jpg" alt="image d'ilustration du text"></div>
+            <div class="text">
+            <h1>Evolution</h1>
+            <p>Robert's Adventures a prévu de rajouter des niveaux est des fonctionalitées comme un mode multi-joueur, un blogue sur ce site, et même des versions application du jeu. Mais ceci ne sera réalisable que avec votre soutien en jouant qui nous donnera la motivation et le courage nécéssaire.</p>
+            </div>
+        </div>
+        
+    </body>
+</html>

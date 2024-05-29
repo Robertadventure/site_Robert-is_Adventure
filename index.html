@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Robert's Adventure</title>
+        <link rel="stylesheet" href="css/globale.css" />
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    </head>
+    <body>
+        <ul class="grandmenu">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="forum.html">forum</a></li>
+                <li><a href="présentation.html">présentation</a></li>
+                <li><a href="jeux.html">jeu</a></li>
+                <button id="bouton_demande_de_conexion"><img src="images/compte.png" alt="" class="compte"></a></button>
+            </ul>
+        </ul>
+
+        <dialog id="dialog_demande_de_conexion">
+            <form method="dialog">
+                <h3 id="label_conexion">Connexion:</h3>
+                <div class="message_champ_text_inpute">
+                    <label for="champ_email">addresse mail:</label>
+                    <input type="email" name="email" id="champ_email">
+                </div>
+                <div class="message_champ_text_inpute">
+                    <label for="champ_code">mot de passe:</label>
+                    <input type="password" name="code" id="champ_code">
+                </div>
+                <div id="message_créer_un_compte_dialog"><label for="créer_un_compte">Vous n'en posséder pas ? Créés-en un.</label></div>
+                <div id="bouton_dialog">
+                    <a href="créer_un_compte.html" class="bouton_du_dialog">Créer un compte</a>
+                    <button id="conexion" class="bouton_du_dialog">Connexion</button>
+                </div>
+                <button type="submit" id="fermer">Fermer</button>
+            </form>
+        </dialog>
+        <script src="json/menu_demande_conexion.js"></script>
+
+        <div class="grosse_video">
+            <div class="video_de_présentation_div"><video src="video/video.mp4" class="video_de_présentation_div_video" autoplay muted loop ></video></div>
+            <div class="bouton_jouer_div"><a href="https://atelier-info.akouo.fr/groupe18/">Jouer</a></div>
+        </div>
+        <div class="bloc_de_text">
+            <div class="image"><img src="images/ciel.jpg" alt="image d'ilustration du text"></div>
+            <div class="text">
+            <h1>Robert's Adventures :</h1>
+            <p>Robert's Adventures est un jeu de plateforme en 20 niveaux répartis dans 5 mondes jouable sur ordinateur et sur mobile ! Le but du jeu est d'éviter les différents ennemis en commançant par les poules tueuse puis en passant par les lanceurs de chocolat et en finissant par l'impitoyable lapin bleu. Sans oublier les multiples obstacles que vous devrez franchir pour arriver à votre objectif final qui est de terminer le plus de niveaux et de ramasser le plus de carottes que les lapins bleus ont égarer sur leur chemin. On ne vous en dit pas plus, venez jouer pour découvrir le nouveau jeu révolutionaire !</p>
+            </div>
+        </div>
+        <div class="bloc_de_text">
+            <div class="image"><img src="images/ciel.jpg" alt="image d'ilustration du text"></div>
+            <div class="text">
+            <h1>Compte :</h1>
+            <p>Robert's Adventures dispose d'un système de comptes performant qui vous permet de sauvegarder votre aventure parmi des mondes exotiques. Ce système de compte est basé sur l'utilisation d'adresses e-mail (Google, Outlook, Icloud...) et d'un mot de passe de 6 caractères qui permet de garantir une sécurité suplémentaire. Quand nous avons créer ce système de compte nous avons espérer que cela vous permette de profiter plainement de Robert's Adventures sans devoir recommencé les niveaux à chaque utilisation.</p>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyCoSkPXSUF2bxOdILFv-1SLyeuPCMU-xUU",
+              authDomain: "robert-is-adventure.firebaseapp.com",
+              databaseURL: "https://robert-is-adventure-default-rtdb.europe-west1.firebasedatabase.app",
+              projectId: "robert-is-adventure",
+              storageBucket: "robert-is-adventure.appspot.com",
+              messagingSenderId: "1014980819343",
+              appId: "1:1014980819343:web:7a600de5052cd3df7fb3fa",
+              measurementId: "G-KMWGH05GJH"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+
+            const auth = getAuth(app);
+          </script>
+    </body>
+</html>
